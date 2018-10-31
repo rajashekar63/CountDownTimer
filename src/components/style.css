@@ -1,0 +1,63 @@
+/* Styles go here */
+.number-field {
+  width: 200px;
+  line-height: 20px;
+  padding: 10px;
+  font-size: 15px;
+}
+.timer {
+  padding: 10px;
+  border: 1px solid;
+  width: 200px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px
+}
+.timer-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.blink {
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:blink 1200ms infinite;
+}
+@keyframes blink {
+    from {
+        background-color:rgb(230, 232, 255);
+    }
+    to {
+        background-color:red;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        background-color:rgb(230, 232, 255);
+    }
+    to {
+        background-color:red;
+    }
+}
+.error {
+border: 2px solid red;
+}
